@@ -112,6 +112,7 @@ function appdown(){
 	var pcxs='<div style="padding:'+gd+'px 0;text-align:center;background-color:#000;"><p style="margin-bottom:15px;font-size:21px;font-weight:200"><font color="#FFFFFF">请下载app观看，网页随时失效</font></p><p style="padding:5px 0"><a class="anniu" href="javascript:;" onclick="'+os+'">点击观看</a>  <a class="anniu" href="https://haomitv.github.io/haomitv/7xvod.html" target="_blank">下载APP</a></p><small><font color="#FFFFFF">安装APP观看速度更快哟！支持下载和投屏</font></small></div>';
 	document.getElementById('video').innerHTML = pcxs;
 }
+
 function mplay(){
 	var html = '<video id="media" src="' + videoUrl + '" poster="'+zstp+'" width="100%" height="100%" webkit-playsinline="true" preload="meta" controls="controls" x5-video-player-type="h5"></video>';
     document.getElementById('video').innerHTML = html;
