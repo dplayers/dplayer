@@ -57,9 +57,25 @@ ldgurl=ldgurl.replace('http://','https://');
 			});
 		}
   }
+dp.on("loadeddata", function () {
+  dp.notice("视频已就绪");
+});
+dp.on("fullscreen", function () {
+  dp.notice("全屏已开启");
+});
+dp.on("fullscreen_cancel", function () {
+  dp.notice("全屏已关闭");
+});
+dp.on('ended',function(){
+　　　　if(next!=''){
+            top.location.href = next;
+        }
+　　});
+dp.on("error", function () {
+  dp.notice("加载失败，请切换线路观看~");
+});
 </script>
-<div style="z-index:9999;position: absolute;bottom:0px;left:0px;">
-    
+<div style="z-index:9999;position: absolute;bottom:0px;left:0px;">    
 </div>
 </body>
 </html>
